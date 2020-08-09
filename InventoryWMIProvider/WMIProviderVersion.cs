@@ -7,6 +7,9 @@ using System.Management.Instrumentation;
 
 namespace InventoryWMIProvider
 {
+
+
+        // SIngleton WMI Class which just returns the version of the assembly implementing it
         [ManagementEntity(Singleton = true)]
         [ManagementQualifier("Description", Value = "returns the version of the WMI Provider.")]
         public class WMIProviderVersion
