@@ -9,13 +9,13 @@ namespace InventoryWMIProvider
 {
 
 
-        // SIngleton WMI Class which just returns the version of the assembly implementing it
+        // Singleton WMI Class which just returns the version of the assembly implementing it
         [ManagementEntity(Singleton = true)]
         [ManagementQualifier("Description", Value = "returns the version of the WMI Provider.")]
         public class WMIProviderVersion
         {
-            private string _AssemblyVersionAsString;
-            private Version _AssemblyVersion;
+            private readonly string _AssemblyVersionAsString;
+            private readonly Version _AssemblyVersion;
             [ManagementBind]
             public WMIProviderVersion()
             {

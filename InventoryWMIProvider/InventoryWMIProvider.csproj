@@ -53,6 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\ErrorFieldProvider.cs" />
+    <Compile Include="Helpers\RegistryGeneric.cs" />
     <Compile Include="MOFWMIInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
